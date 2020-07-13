@@ -21,43 +21,48 @@ package com.company;
 
 public class JavaStacks {
 
-    public static void main(String[] args)
-    {
-        //Creating a string object that needs to be reversed.
+    public static void main(String[] args) {
+        // Creating a string object that needs to be reversed.
         String str = "ABCDEFG";
-        //Creating a string object that needs to check and see if its balanced.
+        // Creating a string object that needs to check and see if its balanced.
         String myStr = "{1[2)3}";
-        //Creating an object from the String reverser class to access the reverse method for our string.
+        // Creating an object from the String reverser class to access the reverse
+        // method for our string.
         StringReverser reverser = new StringReverser();
-        //Creating a variable named result and assigning it to the reverser object.
-        //This accesses the reverse method and is passed the str string object as an argument.
-        //The value is stored in our result variable and is then displayed on the console.
+        // Creating a variable named result and assigning it to the reverser object.
+        // This accesses the reverse method and is passed the str string object as an
+        // argument.
+        // The value is stored in our result variable and is then displayed on the
+        // console.
         var result = reverser.reverse(str);
         System.out.println(result);
 
-        //Here we create an object from the BalancedStack class call exp
+        // Here we create an object from the BalancedStack class call exp
         BalancedStack exp = new BalancedStack();
-        //We use the object to access the isBalanced() method and pass the string object myStr as an argument.
-        //We store the result which is a boolean into a variable called myResult and display the result on the console.
+        // We use the object to access the isBalanced() method and pass the string
+        // object myStr as an argument.
+        // We store the result which is a boolean into a variable called myResult and
+        // display the result on the console.
         var myResult = exp.isBalanced(myStr);
         System.out.println(myResult);
 
-        //Creating an object from the Stack array class to access methods and fields of that class.
+        // Creating an object from the Stack array class to access methods and fields of
+        // that class.
         StackArray stack = new StackArray();
-        //Now we push items into our stack.
+        // Now we push items into our stack.
         stack.push(10);
         stack.push(20);
         stack.push(30);
         stack.push(40);
-        //Now we display the results of our stack array.
+        // Now we display the results of our stack array.
         System.out.println(stack);
-        //Now we display the result of our peek() method.
+        // Now we display the result of our peek() method.
         System.out.println(stack.peek());
-        //Now we pop items from our stack.
+        // Now we pop items from our stack.
         stack.pop();
-        //Now we see the result of our stack array after popping an item.
+        // Now we see the result of our stack array after popping an item.
         System.out.println(stack);
-        //Now we check our isEmpty() method.
+        // Now we check our isEmpty() method.
         System.out.println(stack.isEmpty());
     }
 }

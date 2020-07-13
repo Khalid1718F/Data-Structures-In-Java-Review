@@ -27,45 +27,47 @@ import java.util.Arrays;
 
 public class LinkedLists {
 
-    public static void main(String[] args)
-    {
-        //Creating a LinkedList object from the ListBuild class.
+    public static void main(String[] args) {
+        // Creating a LinkedList object from the ListBuild class.
         ListBuild listObject = new ListBuild();
 
-        //Here we use our addLast method to add elements to the end of our list.
+        // Here we use our addLast method to add elements to the end of our list.
         listObject.addLast(40);
         listObject.addLast(50);
         listObject.addLast(60);
 
-        //Here we use our addFirst method to add items to the beginning of our list.
+        // Here we use our addFirst method to add items to the beginning of our list.
         listObject.addFirst(30);
         listObject.addFirst(20);
         listObject.addFirst(10);
 
-        //Now we remove the first and last items from our LinkedList using the corresponding methods.
+        // Now we remove the first and last items from our LinkedList using the
+        // corresponding methods.
         listObject.removeFirst();
         listObject.removeLast();
-        //Now we print out the result of our LinkedList after the modifications have been made.
+        // Now we print out the result of our LinkedList after the modifications have
+        // been made.
         System.out.println(listObject);
 
-
-        //We check our indexOf method using the print statement with the LinkedList object.
+        // We check our indexOf method using the print statement with the LinkedList
+        // object.
         System.out.println(listObject.indexOf(20));
-        //We check our contains method using the print statement and the LinkedList object.
+        // We check our contains method using the print statement and the LinkedList
+        // object.
         System.out.println(listObject.contains(50));
-        //We check the size of our LinkedList using the size method.
+        // We check the size of our LinkedList using the size method.
         System.out.println(listObject.size());
 
-        //We declare our array of integers in our main method and set it equal to,
-        //our listObject that accesses the toArray method to convert the values to an array.
-        //These new values are now stored in out array object and can be referenced.
+        // We declare our array of integers in our main method and set it equal to,
+        // our listObject that accesses the toArray method to convert the values to an
+        // array.
+        // These new values are now stored in out array object and can be referenced.
         int[] array = listObject.toArray();
 
-        //Now we import the Arrays class and use it to access the toString method.
-        //Inside the toString method we pass our arrays object as an argument.
-        //The expression gets evaluated and printed using the println method.
+        // Now we import the Arrays class and use it to access the toString method.
+        // Inside the toString method we pass our arrays object as an argument.
+        // The expression gets evaluated and printed using the println method.
         System.out.println(Arrays.toString(array));
-
 
     }
 }
